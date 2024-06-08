@@ -1,0 +1,28 @@
+{
+  
+  "dependencies": {
+  
+    
+  "framer-motion": "^10.16.4",
+  
+    
+  "react-router-dom": "^6.23.1",
+  
+    
+  "react-scroll": "^1.9.0",
+  
+    
+  "sass": "^1.68.0",
+  
+    
+  "tailwind": "^4.0.0"
+  
+  },
+  
+  "devDependencies": {
+  
+    
+  "gh-pages": "^6.1.1"
+  
+  }
+}

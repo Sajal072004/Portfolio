@@ -1,0 +1,31 @@
+@import "../../app.scss";
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin-top:3vh;
+
+  .firsth{
+    margin-top:10vh;
+  }
+ 
+
+  h1 {
+    text-align: center;
+    margin-top:10px;
+    margin-bottom:5vh;
+    font-size: 30px;
+
+    @include mobile{
+      font-size:25px;
+      margin-bottom:0vh;
+      margin-top:0px;
+    }
+    
+  }
+
+  .skills-section {
+    flex: 1; // Each section takes equal height
+  }
+}

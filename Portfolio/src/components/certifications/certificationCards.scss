@@ -1,0 +1,87 @@
+@import "../../app.scss";
+
+.certification-cards-container {
+
+  width: 95vw; 
+  display: flex;
+  overflow-x: scroll;
+  z-index: 10000;
+  height: 100vh;
+  margin-left:2.5vw;
+  align-items: center;
+  justify-content: start;
+  padding:0;
+
+
+  @include mobile {
+    flex-direction: column;
+    /* Disable horizontal scrolling */
+    overflow-y: scroll; /* Enable vertical scrolling */
+    height: 70vh; /* Set to full viewport height */
+    margin-left: -2vw; /* Adjust margin for mobile */
+    margin-top:12vh;
+    width:100%;
+    align-items: start;
+    overflow-x : hidden;
+    
+    
+  }
+  
+
+  
+ 
+  
+
+ 
+
+
+.card {
+  flex: 0 0 45%; /* Defines card width as 33.33% of viewport */
+    /* Adjust spacing if needed */
+  text-decoration: none; /* Removes underline from Link elements */
+  border-radius: 0.5rem; /* Adds rounded corners to cards */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  background-color: transparent; /* Set card background color */
+  scroll-snap-align: start; /* Ensures cards snap to start of viewport */
+  -webkit-scroll-snap-align: start; /* WebKit compatibility */
+  height:78%;
+  width:100%;
+
+  
+
+  @include mobile {
+    flex: 0 0 auto; /* Cards take full width on mobile */
+    width: 95vw; /* Ensure cards take 80% of viewport width */
+    height:35vh; /* Ensure cards take 50% of viewport height */
+    margin-top: 5vh; /* Reduce top margin to 5vh */
+    /* Add bottom margin to 5vh */
+  }
+  
+
+  /* Optional hover effects */
+  &:hover {
+    transform: scale(1.01); 
+    
+
+    .card-title{
+      color:black;
+    }
+    
+  }
+
+  
+}
+
+.card-title {
+  font-weight: bold;
+  color: rgb(255, 255, 255); /* Adjust title text color */
+  
+}
+
+.card-description {
+  color: #000000; /* Adjust description text color */
+}
+
+
+}
+
